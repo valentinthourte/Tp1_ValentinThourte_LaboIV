@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-login',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterLinkActive, RouterLink, RouterOutlet],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.scss'
 })
-export class AppComponent {
-  title = 'Tp1_ValentinThourte';
+export class LoginComponent {
 
   constructor(private router: Router) {
 
